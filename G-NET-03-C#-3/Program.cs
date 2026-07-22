@@ -42,6 +42,13 @@ namespace CSharpAssignment3
                 Console.WriteLine("Invalid");
             }
             #endregion
+            #region Q6: Unboxing Int
+            object o6 = 10;
+            int a6 = (int)o6;
+            Console.WriteLine(a6 + 1);
+            // Output: 11
+            // Explanation: Unboxing object o to int extracts 10, then adding 1 gives 11.
+            #endregion
         }
     }
 }
