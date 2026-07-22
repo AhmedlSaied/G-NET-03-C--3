@@ -61,6 +61,16 @@ namespace CSharpAssignment3
                 long x7 = Convert.ToInt64(o7);
                 Console.WriteLine(x7);
             }
+            // Explanation: Direct (long)o fails because boxed value is int. Convert.ToInt64 handles the conversion safely.
+            #endregion
+            #region Q8: Avoid Exception using as or pattern matching
+            object o8 = 10;
+            long x8 = o8 is long l ? l : -1;
+            Console.WriteLine(x8);
+            // Output: -1
+            // Explanation: Checks if object is long, if not assigns -1 safely.
+            #endregion
+
         }
     }
 }
