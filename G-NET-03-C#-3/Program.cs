@@ -49,6 +49,18 @@ namespace CSharpAssignment3
             // Output: 11
             // Explanation: Unboxing object o to int extracts 10, then adding 1 gives 11.
             #endregion
+            #region Q7: Invalid Unboxing Type Handling
+            object o7 = 10;
+            // Handling: Convert safely instead of direct casting to avoid InvalidCastException
+            if (o7 is long lVal)
+            {
+                Console.WriteLine(lVal);
+            }
+            else
+            {
+                long x7 = Convert.ToInt64(o7);
+                Console.WriteLine(x7);
+            }
         }
     }
 }
