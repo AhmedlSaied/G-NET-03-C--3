@@ -95,6 +95,11 @@ namespace CSharpAssignment3
                 Console.WriteLine(0);
             }
             #endregion
+            #region Q12: Fixing Null Forgiving Warning/Crash
+            string? s12 = null;
+            // Fix: Use null check instead of forcing with ! operator which causes runtime crash
+            Console.WriteLine(s12?.Length ?? 0);
+            #endregion
         }
     }
 }
