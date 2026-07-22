@@ -31,6 +31,17 @@ namespace CSharpAssignment3
             // Console.WriteLine(x);
             // Explanation: Throws FormatException at runtime because "12a" contains non-numeric characters.
             #endregion
+            #region Q5: Safe Conversion with TryParse
+            string s5 = "12a";
+            if (int.TryParse(s5, out int parsedVal))
+            {
+                Console.WriteLine(parsedVal);
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+            #endregion
         }
     }
 }
