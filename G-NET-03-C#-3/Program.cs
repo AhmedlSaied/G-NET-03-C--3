@@ -83,6 +83,18 @@ namespace CSharpAssignment3
             // Output: 0
             // Explanation: name2?.Length evaluates to null, then ?? 0 falls back to 0.
             #endregion
+            #region Q11: Handling Potential Issue in Parse
+            string? s11 = null;
+            // Solution: Use TryParse to avoid magic default strings
+            if (int.TryParse(s11, out int result11))
+            {
+                Console.WriteLine(result11);
+            }
+            else
+            {
+                Console.WriteLine(0);
+            }
+            #endregion
         }
     }
 }
