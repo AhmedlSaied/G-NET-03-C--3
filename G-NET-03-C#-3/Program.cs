@@ -100,6 +100,13 @@ namespace CSharpAssignment3
             // Fix: Use null check instead of forcing with ! operator which causes runtime crash
             Console.WriteLine(s12?.Length ?? 0);
             #endregion
+            #region Q13: Convert.ToInt32 with Null
+            string? s13 = null;
+            int x13 = Convert.ToInt32(s13);
+            Console.WriteLine(x13);
+            // Output: 0
+            // Explanation: Convert.ToInt32 returns 0 when receiving null without throwing exception.
+            #endregion
         }
     }
 }
