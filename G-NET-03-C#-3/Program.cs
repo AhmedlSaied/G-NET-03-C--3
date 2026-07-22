@@ -107,6 +107,17 @@ namespace CSharpAssignment3
             // Output: 0
             // Explanation: Convert.ToInt32 returns 0 when receiving null without throwing exception.
             #endregion
+            #region Q14: Compare int.Parse vs Convert.ToInt32
+            string? s14 = null;
+
+            // A: int.Parse(null) -> Throws ArgumentNullException
+            // int a = int.Parse(s14); 
+
+            // B: Convert.ToInt32(null) -> Handles null safely and returns 0
+            int b = Convert.ToInt32(s14);
+            Console.WriteLine(b);
+            // Explanation: Parse requires non-null string, Convert handles null by returning default value (0).
+            #endregion
         }
     }
 }
