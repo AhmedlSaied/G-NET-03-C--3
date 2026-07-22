@@ -70,7 +70,12 @@ namespace CSharpAssignment3
             // Output: -1
             // Explanation: Checks if object is long, if not assigns -1 safely.
             #endregion
-
+            #region Q9: Null-conditional Operator
+            string? name = null;
+            Console.WriteLine(name?.Length);
+            // Output: (Empty/Nothing)
+            // Explanation: Safe navigation operator (?.) returns null instead of throwing NullReferenceException.
+            #endregion
         }
     }
 }
