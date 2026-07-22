@@ -25,6 +25,12 @@ namespace CSharpAssignment3
             Console.Write("Enter your age: ");
             int age = int.Parse(Console.ReadLine() ?? "0");
             #endregion
+            #region Q4: int.Parse Invalid String
+            // string s = "12a";
+            // int x = int.Parse(s);
+            // Console.WriteLine(x);
+            // Explanation: Throws FormatException at runtime because "12a" contains non-numeric characters.
+            #endregion
         }
     }
 }
