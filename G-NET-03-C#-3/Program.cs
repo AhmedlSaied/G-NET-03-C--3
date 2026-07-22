@@ -76,6 +76,13 @@ namespace CSharpAssignment3
             // Output: (Empty/Nothing)
             // Explanation: Safe navigation operator (?.) returns null instead of throwing NullReferenceException.
             #endregion
+            #region Q10: Null-conditional with Null-coalescing
+            string? name2 = null;
+            int length = name2?.Length ?? 0;
+            Console.WriteLine(length);
+            // Output: 0
+            // Explanation: name2?.Length evaluates to null, then ?? 0 falls back to 0.
+            #endregion
         }
     }
 }
