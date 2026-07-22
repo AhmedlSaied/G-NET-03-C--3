@@ -118,6 +118,10 @@ namespace CSharpAssignment3
             Console.WriteLine(b);
             // Explanation: Parse requires non-null string, Convert handles null by returning default value (0).
             #endregion
+            #region Q15: Conditional User Display
+            string? user = null;
+            Console.WriteLine(user != null ? user.ToUpper() : "Guest");
+            #endregion
         }
     }
 }
